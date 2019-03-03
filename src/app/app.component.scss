@@ -204,5 +204,16 @@
   }
   
   .mat-fab.mat-primary, .mat-flat-button.mat-primary, .mat-mini-fab.mat-primary, .mat-raised-button.mat-primary {
+    background-color: #205084d1;
+  }
+
+  .mat-card-header{
+    margin-right: 20px;
     background-color: #649c5a;
+
+    border-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
   }
