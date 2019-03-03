@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'lassila-tikanoja';
+
+  openTab(url: string) {
+    let win = window.open(url, '_blank');
+    win.focus();
+  }
 }

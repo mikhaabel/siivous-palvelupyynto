@@ -1,21 +1,66 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="bounds">
+    
+  <div class="content" 
+       fxLayout="row" 
+       fxLayout.lt-md="column" 
+       fxFlexFill >
+       
+      <div fxFlex="40" class="box-left" fxFlex.lt-md="50" fxLayoutAlign="center center">
+          <div>
+            <img src="assets/lastik-logo.jpg">
+          </div> 
+      </div>
+      <div fxFlex="60" class="box-right" fxLayoutGap="1%" fxLayoutAlign="center" fxFlex.lt-md="50" fxLayout="column">
+                 
+        <mat-card class="example-card" fxLayout="row" fxLayoutAlign="start">
+              <mat-card-header fxLayoutAlign="center center">
+                <div mat-card-avatar style="background-image: URL('/assets/swann.png')" class="example-header-image"></div>
+                <mat-card-title>Elizabeth Swann</mat-card-title>
+                <mat-card-subtitle>Siivoja</mat-card-subtitle>
+              </mat-card-header>
+              <button (click)="openTab('https://www.lt.fi/fi/yritysasiakkaat/palvelut/siivouspalvelut')" mat-raised-button color="primary" fxFlex="70" fxLayoutAlign="start">
+                <div class="cta-text">TILAA SIIVOUS</div>
+              </button>
+            </mat-card>
+
+            <mat-card class="example-card" fxLayout="row" fxLayoutAlign="start">
+                <mat-card-header fxLayoutAlign="center center">
+                  <div mat-card-avatar style="background-image: URL('/assets/sparrow.jpeg')" class="example-header-image"></div>
+                  <mat-card-title>Jack Sparrow</mat-card-title>
+                  <mat-card-subtitle>The Korjaaja</mat-card-subtitle>
+                </mat-card-header>
+                <button (click)="openTab('https://huoltopyynto.lassila-tikanoja.fi/')" mat-raised-button color="primary" fxFlex="70" fxLayoutAlign="start">
+                  <div class="cta-text">TEE HUOLTO-PYYNTÖ</div>
+                </button>
+              </mat-card>
+
+            <mat-card class="example-card" fxLayout="row" fxLayoutAlign="start">
+                <mat-card-header fxLayoutAlign="center center">
+                  <div mat-card-avatar style="background-image: URL('/assets/will.jpg')" class="example-header-image"></div>
+                  <mat-card-title>Will <br/> Turner</mat-card-title>
+                  <mat-card-subtitle>Asiakaspalvelija</mat-card-subtitle>
+                </mat-card-header>
+                <button (click)="openTab('https://www.lt.fi/fi/yritysasiakkaat/yhteystiedot/palaute')" mat-raised-button color="primary" fxFlex="70" fxLayoutAlign="start">
+                  <div class="cta-text">ANNA PALAUTE</div>
+                </button>
+              </mat-card>
+
+              <mat-card class="example-card" fxLayout="row" fxLayoutAlign="start">
+                  <mat-card-header fxLayoutAlign="center center">
+                    <div mat-card-avatar style="background-image: URL('/assets/carina.jpg')" class="example-header-image"></div>
+                    <mat-card-title>Carina Smyth</mat-card-title>
+                    <mat-card-subtitle>Asiakaspalvelija</mat-card-subtitle>
+                  </mat-card-header>
+                  <button (click)="openTab('https://www.lt.fi/fi/yritysasiakkaat/yhteystiedot/paikalliset-yhteystiedot')" mat-raised-button color="primary" fxFlex="70" fxLayoutAlign="start">
+                    <div class="cta-text">SOITA MEILLE</div>
+                  </button>
+                </mat-card>
+      </div>
+  </div>
+  <mat-divider class="footer-divider" fxLayout="row"></mat-divider>
+  <div class="footer-year">
+      © 2019
+  </div>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
 <router-outlet></router-outlet>
