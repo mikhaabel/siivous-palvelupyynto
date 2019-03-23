@@ -5,59 +5,45 @@
        fxLayout.lt-md="column" 
        fxFlexFill >
        
-      <div fxFlex="40" class="box-left" fxFlex.lt-md="50" fxLayoutAlign="center center">
+      <div fxLayout="column"  fxFlex="40" class="box-left" fxFlex.lt-md="50" fxLayoutAlign.lt-md="center center">
           <div>
-            <img src="assets/lastik-logo.jpg">
+            <img  class="logo-image" src="assets/lastik-logo.png">
           </div> 
+          <div class="logo-text">
+            LOMAKKEIDEN KAUTTA TEHTYÄ KIINTEISTÖHUOLLON SIIVOUSPYYNTÖJÄ KÄSITELLÄÄN ARKISIN NORMAALINA TYÖAIKANA JA NE OHJAUTUVAT SUORAAN KIINTEISTÖNHOITAHILLE.
+          </div>
       </div>
-      <div fxFlex="60" class="box-right" fxLayoutGap="1%" fxLayoutAlign="center" fxFlex.lt-md="50" fxLayout="column">
+      <div fxFlex="60" class="box-right" fxLayoutGap="4%" fxLayoutAlign="center" fxFlex.lt-md="50" fxLayout="column" fxFlexOffset.lt-md="6%">
                  
         <mat-card class="example-card" fxLayout="row" fxLayoutAlign="start">
-              <mat-card-header fxLayoutAlign="center center">
-                <div mat-card-avatar style="background-image: URL('https://mikhaabel.github.io/siivous-palvelupyynto/assets/swann.png')" class="example-header-image"></div>
-                <mat-card-title>Elizabeth Swann</mat-card-title>
-                <mat-card-subtitle>Siivoja</mat-card-subtitle>
-              </mat-card-header>
-              <button (click)="openTab('https://www.lt.fi/fi/yritysasiakkaat/palvelut/siivouspalvelut')" mat-raised-button color="primary" fxFlex="70" fxLayoutAlign="start">
-                <div class="cta-text">TILAA SIIVOUS</div>
-              </button>
-            </mat-card>
-
-            <mat-card class="example-card" fxLayout="row" fxLayoutAlign="start">
-                <mat-card-header fxLayoutAlign="center center">
-                  <div mat-card-avatar style="background-image: URL('https://mikhaabel.github.io/siivous-palvelupyynto/assets/sparrow.jpeg')" class="example-header-image"></div>
-                  <mat-card-title>Jack Sparrow</mat-card-title>
-                  <mat-card-subtitle>The Korjaaja</mat-card-subtitle>
-                </mat-card-header>
-                <button (click)="openTab('https://huoltopyynto.lassila-tikanoja.fi/')" mat-raised-button color="primary" fxFlex="70" fxLayoutAlign="start">
-                  <div class="cta-text">TEE HUOLTO-PYYNTÖ</div>
-                </button>
-              </mat-card>
-
-            <mat-card class="example-card" fxLayout="row" fxLayoutAlign="start">
-                <mat-card-header fxLayoutAlign="center center">
-                  <div mat-card-avatar style="background-image: URL('https://mikhaabel.github.io/siivous-palvelupyynto/assets/will.jpg')" class="example-header-image"></div>
-                  <mat-card-title>Will <br/> Turner</mat-card-title>
-                  <mat-card-subtitle>Asiakaspalvelija</mat-card-subtitle>
-                </mat-card-header>
-                <button (click)="openTab('https://www.lt.fi/fi/yritysasiakkaat/yhteystiedot/palaute')" mat-raised-button color="primary" fxFlex="70" fxLayoutAlign="start">
-                  <div class="cta-text">ANNA PALAUTE</div>
-                </button>
-              </mat-card>
-
-              <mat-card class="example-card" fxLayout="row" fxLayoutAlign="start">
-                  <mat-card-header fxLayoutAlign="center center">
-                    <div mat-card-avatar style="background-image: URL('https://mikhaabel.github.io/siivous-palvelupyynto/assets/carina.jpg')" class="example-header-image"></div>
-                    <mat-card-title>Carina Smyth</mat-card-title>
-                    <mat-card-subtitle>Asiakaspalvelija</mat-card-subtitle>
-                  </mat-card-header>
-                  <button (click)="openTab('https://www.lt.fi/fi/yritysasiakkaat/yhteystiedot/paikalliset-yhteystiedot')" mat-raised-button color="primary" fxFlex="70" fxLayoutAlign="start">
-                    <div class="cta-text">SOITA MEILLE</div>
-                  </button>
-                </mat-card>
+          <mat-card-header fxLayoutAlign="center center">
+            <div mat-card-avatar style="background-image: URL('https://mikhaabel.github.io/siivous-palvelupyynto/assets/swann.png')" class="example-header-image"></div>
+          </mat-card-header>
+          <button fxFlex.lt-md="80" class="cta-button" (click)="openTab('https://www.lt.fi/fi/yritysasiakkaat/palvelut/siivouspalvelut')" mat-raised-button color="white" fxFlex="70" fxLayoutAlign="start">
+              TILAA SIIVOUS
+          </button>
+        </mat-card>            
+        <mat-card class="example-card" fxLayout="row" fxLayoutAlign="start">
+            <mat-card-header fxLayoutAlign="center center">
+              <div mat-card-avatar style="background-image: URL('https://mikhaabel.github.io/siivous-palvelupyynto/assets/sparrow.jpeg')" class="example-header-image"></div>
+            </mat-card-header>
+            <button fxFlex.lt-md="80" class="cta-button" (click)="openTab('https://www.lt.fi/fi/yritysasiakkaat/yhteystiedot/palaute')" mat-raised-button color="white" fxFlex="70" fxLayoutAlign="start">
+                ANNA PALAUTETTA
+            </button>
+        </mat-card>        
+        <mat-card class="example-card" fxLayout="row" fxLayoutAlign="start">
+            <mat-card-header fxLayoutAlign="center center">
+              <div mat-card-avatar style="background-image: URL('https://mikhaabel.github.io/siivous-palvelupyynto/assets/will.jpg')" class="example-header-image"></div>
+            </mat-card-header>
+            <button fxFlex.lt-md="80" class="cta-button" (click)="openTab('https://www.lt.fi/fi/yritysasiakkaat/yhteystiedot/yritysasiakkaiden-asiakaspalvelu')" mat-raised-button color="white" fxFlex="70" fxLayoutAlign="start">
+                SOITA MEILLE
+            </button>
+        </mat-card>
+        <div fxFlexOffset.lt-md="10%" class="example-card-footer-text">
+            KUN JÄTÄT LOMAKKEELLE SÄHKÖPOSTIOSOITTEESI, SAAT SEURANTALINKIN, JOISTA VOIT TARKASTELLA TYÖN KULKUA JA ANTAA PALAUTETTA TYÖN VALMISTUTTUA.
+        </div>   
       </div>
   </div>
-  <mat-divider class="footer-divider" fxLayout="row"></mat-divider>
   <div class="footer-year">
       © 2019
   </div>
