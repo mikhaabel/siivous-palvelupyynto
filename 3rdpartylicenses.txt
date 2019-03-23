@@ -114,8 +114,6 @@ THE SOFTWARE.
 
 @angular/material/card
 
-@angular/material/divider
-
 @angular/platform-browser
 MIT
 
